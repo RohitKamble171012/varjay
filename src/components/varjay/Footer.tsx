@@ -127,21 +127,38 @@ export function Footer() {
               <span className="w-4 h-[1px] bg-[#F4813A]" /> Contact
             </h4>
             <ul className="space-y-4 text-[15px] text-[#F9F3E8]/70">
-              <li className="flex gap-3 items-start group">
-                <MapPin className="w-5 h-5 mt-0.5 text-[#F4813A] shrink-0 group-hover:-translate-y-1 transition-transform" />
-                <span className="group-hover:text-white transition-colors">After plot 78 to 81 and before sector 1, add Near Narayan Dairy, please make this change wherever address is there in the website</span>
-              </li>
-              <li className="flex gap-3 items-start group">
-                <Phone className="w-5 h-5 mt-0.5 text-[#F4813A] shrink-0 group-hover:rotate-12 transition-transform" />
-                <a href="tel:+917770003036" className="hover:text-white transition-colors">+91 777 000 3036</a>
-              </li>
-              <li className="flex gap-3 items-start group">
-                <Mail className="w-5 h-5 mt-0.5 text-[#F4813A] shrink-0 group-hover:scale-110 transition-transform" />
-                <a href="mailto:info@varjaymusic.com" className="hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#F4813A] after:transition-all hover:after:w-full">
-                  info@varjaymusic.com
-                </a>
-              </li>
-            </ul>
+  <li className="flex gap-3 items-start group">
+    <MapPin className="w-5 h-5 mt-0.5 text-[#F4813A] shrink-0 group-hover:-translate-y-1 transition-transform" />
+    <span className="group-hover:text-white transition-colors">
+      Varjay Music Academy<br />
+      Shop No. 1 & 2, Sai-Jyot Co-op Hsg Society, Plot No. 106 A,<br />
+      Next to Rekhi-Sai Orchid Co-op Hsg Society,<br />
+      Sector 1, Sanpada, Navi Mumbai - 400705, Maharashtra
+    </span>
+  </li>
+
+  <li className="flex gap-3 items-start group">
+    <Phone className="w-5 h-5 mt-0.5 text-[#F4813A] shrink-0 group-hover:rotate-12 transition-transform" />
+    <div className="flex flex-col">
+      <a href="tel:+917770003037" className="hover:text-white transition-colors">
+        +91 77700 03037
+      </a>
+      <a href="tel:+917770003036" className="hover:text-white transition-colors">
+        +91 77700 03036
+      </a>
+    </div>
+  </li>
+
+  <li className="flex gap-3 items-start group">
+    <Mail className="w-5 h-5 mt-0.5 text-[#F4813A] shrink-0 group-hover:scale-110 transition-transform" />
+    <a
+      href="mailto:info@varjaymusic.com"
+      className="hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#F4813A] after:transition-all hover:after:w-full"
+    >
+      info@varjaymusic.com
+    </a>
+  </li>
+</ul>
 
             {/* Social Icons */}
             <div className="flex gap-4 mt-8">
