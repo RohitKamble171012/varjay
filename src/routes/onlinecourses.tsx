@@ -11,6 +11,7 @@ import {
   ChevronUp,
   CheckCircle2,
 } from "lucide-react";
+import { ContactStrip } from "@/components/varjay/ContactStrip";
 
 // ─── ROUTE — must be first export for TanStack Router code-splitter ──────────
 export const Route = createFileRoute("/onlinecourses")({
@@ -816,74 +817,7 @@ function OnlineCoursesPage() {
       </section>
 
       {/* ── ENQUIRY SECTION ───────────────────────────────────────────────── */}
-      <section
-        id="enquire"
-        className="py-20 scroll-mt-20"
-        style={{ background: "#FEFAF1" }}
-      >
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-[1.1fr_1fr] gap-12 items-start">
-          <div>
-            <p className="font-mono text-xs text-[#F59E0B] tracking-widest mb-3">
-              GET IN TOUCH
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl font-semibold text-[#1C0A00] leading-tight">
-              Book a trial class.
-            </h2>
-            <p className="mt-4 text-[#57534e] text-lg max-w-md">
-              Tell us which instruments you'd like to learn. We'll recommend a batch
-              and time that fits you perfectly.
-            </p>
-            <ul className="mt-8 space-y-4 text-[#1C0A00]">
-              <li className="flex items-start gap-3">
-                <span className="w-10 h-10 rounded-full bg-amber-100 text-[#F59E0B] flex items-center justify-center shrink-0">
-                  <MapPin className="w-4 h-4" />
-                </span>
-                <div>
-                  <p className="font-semibold">Sanpada, Navi Mumbai</p>
-                  <p className="text-sm text-[#78716C]">Studio + online classes worldwide</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-10 h-10 rounded-full bg-amber-100 text-[#F59E0B] flex items-center justify-center shrink-0">
-                  <Phone className="w-4 h-4" />
-                </span>
-                <div>
-                  <p className="font-semibold">
-                    <a href="tel:+917770003036" className="hover:text-[#F59E0B]">
-                      +91 777 000 3036
-                    </a>
-                  </p>
-                  <p className="text-sm text-[#78716C]">Call or WhatsApp</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-10 h-10 rounded-full bg-amber-100 text-[#F59E0B] flex items-center justify-center shrink-0">
-                  <Mail className="w-4 h-4" />
-                </span>
-                <div>
-                  <p className="font-semibold">
-                    <a href="mailto:info@varjaymusic.com" className="hover:text-[#F59E0B]">
-                      info@varjaymusic.com
-                    </a>
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-10 h-10 rounded-full bg-amber-100 text-[#F59E0B] flex items-center justify-center shrink-0">
-                  <Clock className="w-4 h-4" />
-                </span>
-                <div>
-                  <p className="font-semibold">Mon – Sat · 10:00 AM – 8:00 PM</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-white rounded-3xl border border-[#E7E5E4] p-8 shadow-sm">
-            <OnlineEnquiryForm />
-          </div>
-        </div>
-      </section>
+      <ContactStrip defaultCourse="Not sure yet" />
     </main>
   );
 }
