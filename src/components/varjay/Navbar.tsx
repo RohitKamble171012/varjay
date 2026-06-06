@@ -46,11 +46,11 @@ export function Navbar() {
       >
         {/* Logo - Visually scaled up without affecting navbar layout height */}
         <Link to="/" className="relative z-10 group flex items-center">
-          <div className="origin-left transform scale-[1.3] md:scale-[1.5] transition-transform duration-400 group-hover:scale-[1.35] md:group-hover:scale-[1.55]">
+          <div className="origin-left transform scale-[1.4] md:scale-[1.6] transition-transform duration-400 group-hover:scale-[1.35] md:group-hover:scale-[1.55]">
             <img
               src="https://varjaymusic.com/wp-content/uploads/2024/05/logo.png"
               alt="Varjay Music Academy"
-              className={`w-auto transition-all duration-400 ease-in-out ${scrolled ? "h-8 md:h-10" : "h-12 md:h-14"
+              className={`w-auto transition-all duration-400 ease-in-out ${scrolled ? "h-10 md:h-12" : "h-16 md:h-20"
                 }`}
             />
           </div>
