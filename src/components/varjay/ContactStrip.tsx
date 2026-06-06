@@ -79,6 +79,7 @@ export function ContactStrip({ defaultCourse }: { defaultCourse?: string }) {
       </li>
     </ul>
   </div>
+        <EnquiryForm defaultCourse={defaultCourse} />
 </div>
     </section>
   );
