@@ -161,47 +161,85 @@ function ContactPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <p className="font-mono text-[11px] tracking-widest text-[#5BB8E8] uppercase font-bold mb-4">Get in Touch</p>
-            <h2 className="font-serif text-4xl font-semibold text-[#0B1F3A] leading-tight mb-6">
-              Let's make some music.
-            </h2>
-            <p className="text-[#0B1F3A]/70 leading-relaxed mb-10 text-lg">
-              Visit our studio in Sanpada, or drop us a message right here. We are always happy to discuss your musical journey.
-            </p>
+            <p className="font-mono text-[11px] tracking-widest text-[#5BB8E8] uppercase font-bold mb-4">
+  Get in Touch
+</p>
 
-            <ul className="space-y-8">
-              <li className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-white border border-[#5BB8E8]/30 shadow-sm flex items-center justify-center shrink-0">
-                  <MapPin className="w-5 h-5 text-[#5BB8E8]" />
-                </div>
-                <div>
-                  <p className="font-semibold text-[#0B1F3A] text-lg">After plot 78 to 81 and before sector 1, add Near Narayan Dairy, please make this change wherever address is there in the website</p>
-                  <p className="text-[#0B1F3A]/60 mt-1">Studio + online classes worldwide</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-white border border-[#5BB8E8]/30 shadow-sm flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 text-[#5BB8E8]" />
-                </div>
-                <div>
-                  <p className="font-semibold text-[#0B1F3A] text-lg">
-                    <a href="tel:+917770003036" className="hover:text-[#5BB8E8] transition-colors">+91 777 000 3036</a>
-                  </p>
-                  <p className="text-[#0B1F3A]/60 mt-1">Call or WhatsApp us directly</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-white border border-[#5BB8E8]/30 shadow-sm flex items-center justify-center shrink-0">
-                  <Mail className="w-5 h-5 text-[#5BB8E8]" />
-                </div>
-                <div>
-                  <p className="font-semibold text-[#0B1F3A] text-lg">
-                    <a href="mailto:info@varjaymusic.com" className="hover:text-[#5BB8E8] transition-colors">info@varjaymusic.com</a>
-                  </p>
-                  <p className="text-[#0B1F3A]/60 mt-1">We typically reply within 24 hours</p>
-                </div>
-              </li>
-            </ul>
+<h2 className="font-serif text-4xl font-semibold text-[#0B1F3A] leading-tight mb-6">
+  Let's make some music.
+</h2>
+
+<p className="text-[#0B1F3A]/70 leading-relaxed mb-10 text-lg">
+  Visit our academy in Sanpada or drop us a message right here. We are always
+  happy to discuss your musical journey.
+</p>
+
+<ul className="space-y-8">
+  <li className="flex items-start gap-4">
+    <div className="w-12 h-12 rounded-full bg-white border border-[#5BB8E8]/30 shadow-sm flex items-center justify-center shrink-0">
+      <MapPin className="w-5 h-5 text-[#5BB8E8]" />
+    </div>
+    <div>
+      <p className="font-semibold text-[#0B1F3A] text-lg">
+        Varjay Music Academy
+      </p>
+      <p className="text-[#0B1F3A]/60 mt-1">
+        Shop No. 1 & 2, Sai-Jyot Co-op Hsg Society, Plot No. 106 A,
+        Next to Rekhi-Sai Orchid Co-op Hsg Society, Sector 1,
+        Sanpada, Navi Mumbai - 400705, Maharashtra
+      </p>
+      <p className="text-[#0B1F3A]/60 mt-1">
+        Studio + online classes worldwide
+      </p>
+    </div>
+  </li>
+
+  <li className="flex items-start gap-4">
+    <div className="w-12 h-12 rounded-full bg-white border border-[#5BB8E8]/30 shadow-sm flex items-center justify-center shrink-0">
+      <Phone className="w-5 h-5 text-[#5BB8E8]" />
+    </div>
+    <div>
+      <p className="font-semibold text-[#0B1F3A] text-lg">
+        <a
+          href="tel:+917770003037"
+          className="hover:text-[#5BB8E8] transition-colors"
+        >
+          +91 77700 03037
+        </a>
+      </p>
+      <p className="font-semibold text-[#0B1F3A] text-lg">
+        <a
+          href="tel:+917770003036"
+          className="hover:text-[#5BB8E8] transition-colors"
+        >
+          +91 77700 03036
+        </a>
+      </p>
+      <p className="text-[#0B1F3A]/60 mt-1">
+        Call or WhatsApp us directly
+      </p>
+    </div>
+  </li>
+
+  <li className="flex items-start gap-4">
+    <div className="w-12 h-12 rounded-full bg-white border border-[#5BB8E8]/30 shadow-sm flex items-center justify-center shrink-0">
+      <Mail className="w-5 h-5 text-[#5BB8E8]" />
+    </div>
+    <div>
+      <p className="font-semibold text-[#0B1F3A] text-lg">
+        <a
+          href="mailto:info@varjaymusic.com"
+          className="hover:text-[#5BB8E8] transition-colors"
+        >
+          info@varjaymusic.com
+        </a>
+      </p>
+      <p className="text-[#0B1F3A]/60 mt-1">
+        We typically reply within 24 hours
+      </p>
+    </div>
+  </li>
+</ul>
           </motion.div>
 
           {/* Right: Contact Form (White card on light blue background) */}
