@@ -1,0 +1,96 @@
+import { motion } from "framer-motion";
+import { FacebookIcon, InstagramIcon } from "./SocialIcons";
+
+const badges = [
+  { label: "Visharad — Tabla", color: "bg-amber-100 text-amber-800" },
+  { label: "10+ Years Teaching", color: "bg-teal-100 text-teal-800" },
+  { label: "Alankar in Progress", color: "bg-violet-100 text-violet-800" },
+  { label: "ABGMV Certified", color: "bg-rose-100 text-rose-800" },
+];
+
+export function Faculty() {
+  return (
+    <section className="bg-white py-24">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="mb-12 text-center">
+          <p className="font-mono text-xs text-[#F59E0B] tracking-widest mb-3">
+            MEET YOUR TEACHER
+          </p>
+          <h2 className="font-display text-5xl md:text-6xl text-[#1C0A00] font-semibold">
+            Learn from a master.
+          </h2>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="grid lg:grid-cols-[35%_65%] rounded-3xl overflow-hidden shadow-2xl bg-[#FEF3C7]"
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 1 }}
+            className="relative min-h-[480px]"
+          >
+            <img
+              src="https://varjaymusic.com/wp-content/uploads/2024/07/arvind1.jpg"
+              alt="Arvind V. Rao"
+              className="absolute inset-0 w-full h-full object-cover object-top"
+            />
+          </motion.div>
+
+          <div className="p-10 lg:p-14">
+            <span className="inline-block px-3 py-1 rounded-full bg-[#F59E0B] text-[#1C0A00] font-mono text-[10px] tracking-widest">
+              FOUNDER & HEAD OF TABLA
+            </span>
+            <h3 className="font-display text-5xl text-[#1C0A00] mt-4 font-semibold">
+              Arvind V. Rao
+            </h3>
+
+            <div className="flex flex-wrap gap-2 mt-5">
+              {badges.map((b) => (
+                <span
+                  key={b.label}
+                  className={`px-3 py-1.5 rounded-full text-xs font-medium ${b.color}`}
+                >
+                  {b.label}
+                </span>
+              ))}
+            </div>
+
+            <p className="mt-6 text-[#1C0A00]/80 leading-relaxed">
+              Arvind V. Rao has been learning tabla for over 10 years and teaching
+              for 7, before founding Varjay. He currently pursues Alankar under Guru
+              Shri Praveen Karkareji. His students range from local beginners to
+              international learners performing on stage.
+            </p>
+
+            <blockquote className="mt-6 font-display italic text-2xl text-[#F43F5E] leading-snug border-l-4 border-[#F43F5E] pl-5">
+              "Every student who walks in leaves with rhythm in their heart."
+            </blockquote>
+
+            <div className="flex gap-3 mt-8">
+              <a
+                href="https://www.facebook.com/p/Varjay-Music-Academy-100077740792261/"
+                target="_blank" rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-white text-[#F59E0B] hover:bg-[#F59E0B] hover:text-white transition-colors flex items-center justify-center"
+              >
+                <FacebookIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/varjay.music.academy/"
+                target="_blank" rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-white text-[#F59E0B] hover:bg-[#F59E0B] hover:text-white transition-colors flex items-center justify-center"
+              >
+                <InstagramIcon className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
