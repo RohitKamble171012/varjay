@@ -35,11 +35,17 @@ export function Faculty() {
             transition={{ delay: 0.3, duration: 1 }}
             className="relative min-h-[480px]"
           >
-            <img
-              src="https://ibb.co/7xGDzBmx"
-              alt="Arvind V. Rao"
-              className="absolute inset-0 w-full h-full object-cover object-top"
-            />
+            <a
+  href="https://ibb.co/7xGDzBmx"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img
+    src="https://i.ibb.co/cKN9vRnK/Whats-App-Image-2026-06-05-at-11-28-58.jpg"
+    alt="Arvind V. Rao"
+    className="absolute inset-0 w-full h-full object-cover object-top"
+  />
+</a>
           </motion.div>
 
           <div className="p-10 lg:p-14">
