@@ -36,7 +36,7 @@ export function Faculty() {
             className="relative min-h-[480px]"
           >
             <img
-              src="https://varjaymusic.com/wp-content/uploads/2024/07/arvind1.jpg"
+              src="https://ibb.co/7xGDzBmx"
               alt="Arvind V. Rao"
               className="absolute inset-0 w-full h-full object-cover object-top"
             />
