@@ -50,7 +50,7 @@ export function Navbar() {
             <img
               src="https://varjaymusic.com/wp-content/uploads/2024/05/logo.png"
               alt="Varjay Music Academy"
-              className={`w-auto transition-all duration-400 ease-in-out ${scrolled ? "h-10 md:h-12" : "h-16 md:h-20"
+              className={`w-auto transition-all duration-400 ease-in-out ${scrolled ? "h-10 md:h-12" : "h-16 md:h-18"
                 }`}
             />
           </div>
