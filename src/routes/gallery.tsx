@@ -1,11 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { motion } from "framer-motion";
-
 import { ContactStrip } from "@/components/varjay/ContactStrip";
-<<<<<<< HEAD
-=======
 import { GALLERY } from "@/components/varjay/data";
->>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
 import { breadcrumbSchema, ldJson } from "@/components/varjay/schema";
 
 const URL = "https://instrument-story-spark.lovable.app/gallery";
