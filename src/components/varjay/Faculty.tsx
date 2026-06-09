@@ -1,8 +1,15 @@
 import { motion } from "framer-motion";
+<<<<<<< HEAD
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from "./SocialIcons";
 
 const badges = [
   { label: "Visharad — Tabla", color: "bg-rose-100 text-rose-800" },
+=======
+import { FacebookIcon, InstagramIcon } from "./SocialIcons";
+
+const badges = [
+  { label: "Visharad — Tabla", color: "bg-amber-100 text-amber-800" },
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
   { label: "10+ Years Teaching", color: "bg-teal-100 text-teal-800" },
   { label: "Alankar in Progress", color: "bg-violet-100 text-violet-800" },
   { label: "ABGMV Certified", color: "bg-rose-100 text-rose-800" },
@@ -68,14 +75,23 @@ export function Faculty() {
             </div>
 
             <p className="mt-6 text-[#1C0A00]/80 leading-relaxed">
+<<<<<<< HEAD
               Arvind V. Rao has been learning tabla for over 15 years and teaching experience of 7+ years.
             </p>
              
+=======
+              Arvind V. Rao has been learning tabla for over 10 years and teaching
+              for 7, before founding Varjay. He currently pursues Alankar under Guru
+              Shri Praveen Karkareji. His students range from local beginners to
+              international learners performing on stage.
+            </p>
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
 
             <blockquote className="mt-6 font-display italic text-2xl text-[#F43F5E] leading-snug border-l-4 border-[#F43F5E] pl-5">
               "Every student who walks in leaves with rhythm in their heart."
             </blockquote>
 
+<<<<<<< HEAD
             <div className="mt-8">
               <p className="font-mono text-[10px] tracking-[0.25em] text-[#F59E0B] uppercase mb-4">
                 Follow Us
@@ -99,6 +115,23 @@ export function Faculty() {
                   </motion.a>
                 ))}
               </div>
+=======
+            <div className="flex gap-3 mt-8">
+              <a
+                href="https://www.facebook.com/p/Varjay-Music-Academy-100077740792261/"
+                target="_blank" rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-white text-[#F59E0B] hover:bg-[#F59E0B] hover:text-white transition-colors flex items-center justify-center"
+              >
+                <FacebookIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/varjay.music.academy/"
+                target="_blank" rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-white text-[#F59E0B] hover:bg-[#F59E0B] hover:text-white transition-colors flex items-center justify-center"
+              >
+                <InstagramIcon className="w-4 h-4" />
+              </a>
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
             </div>
           </div>
         </motion.div>

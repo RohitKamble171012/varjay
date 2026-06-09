@@ -5,7 +5,12 @@ import tablaAudio from "@/assets/audio/tabla.wav";
 
 import guruTabla    from "@/assets/hero/guru-arvind-tabla.jpg";
 import guruPortrait from "@/assets/hero/guru-arvind-portrait.jpg";
+<<<<<<< HEAD
 import vocalImg     from "@/assets/hero/vocal.jpg";
+=======
+import tablaClose   from "@/assets/hero/tabla-closeup.jpg";
+import harmoniumImg from "@/assets/hero/harmonium.jpg";
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
 import fluteImg     from "@/assets/hero/bansuri-flute.jpg";
 import guitarImg    from "@/assets/hero/guitar.jpg";
 
@@ -18,12 +23,20 @@ const SKY      = "#5BB8E8";
 const CRIMSON  = "#E8365D";
 const IVORY    = "#F9F3E8";
 const LAVENDER = "#B9A8FF";
+<<<<<<< HEAD
 const WHITE    = "#FFFFFF";
 
 
 const slides = [
   { src: guruTabla,    label: "Guru Arvind",  tag: "TABLA VISHARAD",       accent: SAFFRON,  glow: SAFFRON,  position: "center 20%" },
   { src: vocalImg,     label: "Vocal",        tag: "RAAG BILAWAL",         accent: TEAL,    glow: TEAL,    position: "center 30%" },
+=======
+
+const slides = [
+  { src: guruTabla,    label: "Guru Arvind",  tag: "TABLA VISHARAD",       accent: SAFFRON,  glow: SAFFRON,  position: "center 20%" },
+  { src: tablaClose,   label: "Tabla",        tag: "TEEN TAAL · EKTAAL",   accent: TURMERIC, glow: TURMERIC, position: "center center" },
+  { src: harmoniumImg, label: "Harmonium",    tag: "HINDUSTANI CLASSICAL",  accent: TEAL,     glow: TEAL,     position: "center 40%" },
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
   { src: fluteImg,     label: "Bansuri",      tag: "RAAG YAMAN",            accent: SKY,      glow: INDIGO,   position: "center center" },
   { src: guitarImg,    label: "Guitar",       tag: "WESTERN & BOLLYWOOD",   accent: CRIMSON,  glow: CRIMSON,  position: "center 30%" },
   { src: guruPortrait, label: "Guru Arvind",  tag: "FOUNDER · VARJAY",      accent: LAVENDER, glow: INDIGO,   position: "center 15%" },
@@ -33,12 +46,16 @@ const notes         = ["♩","♪","♫","♬","𝄞","𝄢"];
 
 export function Hero() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+<<<<<<< HEAD
   const sectionRef = useRef<HTMLElement | null>(null);
+=======
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
   const [playing, setPlaying]   = useState(false);
   const [idx, setIdx]           = useState(0);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+<<<<<<< HEAD
     const section = sectionRef.current;
     const audio = audioRef.current;
     if (!section || !audio) return;
@@ -67,6 +84,8 @@ export function Hero() {
   }, []);
 
   useEffect(() => {
+=======
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
     setProgress(0);
     const INTERVAL = 5000;
     const TICK     = 50;
@@ -92,7 +111,11 @@ export function Hero() {
   const current = slides[idx];
 
   return (
+<<<<<<< HEAD
     <section ref={sectionRef} className="relative overflow-hidden" style={{ background: INK, minHeight: "100svh" }}>
+=======
+    <section className="relative overflow-hidden" style={{ background: INK, minHeight: "100svh" }}>
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
 
       {/* Painterly blobs + staff lines */}
       <div className="absolute inset-0 pointer-events-none z-0">
@@ -163,8 +186,13 @@ export function Hero() {
       </div>
 
       {/* LEFT CONTENT PANEL */}
+<<<<<<< HEAD
       <div className="relative z-20 flex flex-col justify-center min-h-svh pt-20 md:pt-24 pb-16"
         style={{ maxWidth:"52%", padding:"5rem max(3rem,5vw) 4rem max(3rem,5vw)" }}>
+=======
+      <div className="relative z-20 flex flex-col justify-center min-h-svh pb-16"
+        style={{ maxWidth:"52%", padding:"4rem max(3rem,5vw) 4rem max(3rem,5vw)" }}>
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
 
         <motion.div initial={{ opacity:0, y:-12 }} animate={{ opacity:1, y:0 }} transition={{ delay:0.1 }}
           className="inline-flex self-start items-center gap-2.5 px-4 py-2 rounded-full font-mono text-[10px] mb-10 tracking-widest"
@@ -201,7 +229,11 @@ export function Hero() {
           <p className="text-xl leading-relaxed" style={{ fontFamily:"serif", color:TURMERIC }}>
             संगीतं परमानन्दं संगीतं परमं दयालुम्।
           </p>
+<<<<<<< HEAD
           <p className="text-sm mt-2 italic font-bold tracking-wide" style={{ color:WHITE }}>
+=======
+          <p className="text-sm mt-2 italic font-light tracking-wide" style={{ color:`${IVORY}55` }}>
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
             Music is supreme bliss · Music is the most compassionate.
           </p>
         </motion.div>
@@ -228,8 +260,13 @@ export function Hero() {
         </motion.div>
 
         <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay:1.15 }} className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2">
+<<<<<<< HEAD
           <span className="font-mono text-xs" style={{ color:TURMERIC }}>
             <span className="font-bold">★ 5.0</span>&nbsp; GOOGLE REVIEWS
+=======
+          <span className="font-mono text-xs" style={{ color:`${IVORY}55` }}>
+            <span style={{ color:TURMERIC }} className="font-bold">★ 4.9</span>&nbsp; 35+ students
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
           </span>
           <span className="hidden sm:block w-px h-4 bg-white/10" />
           <a href="#contact" className="inline-flex items-center gap-1.5 font-mono text-xs transition-colors" style={{ color:`${IVORY}40` }}
@@ -238,7 +275,11 @@ export function Hero() {
           </a>
           <a href="tel:+917770003036" className="inline-flex items-center gap-1.5 font-mono text-xs transition-colors" style={{ color:`${IVORY}40` }}
             onMouseEnter={e=>(e.currentTarget.style.color=SKY)} onMouseLeave={e=>(e.currentTarget.style.color=`${IVORY}40`)}>
+<<<<<<< HEAD
             <Phone className="w-3 h-3" style={{ color:SKY }} /> +91 777 000 3037
+=======
+            <Phone className="w-3 h-3" style={{ color:SKY }} /> +91 777 000 3036
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
           </a>
         </motion.div>
 

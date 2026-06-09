@@ -44,10 +44,17 @@ export function Footer() {
         viewport={{ once: true, margin: "-50px" }}
         className="relative z-10 max-w-7xl mx-auto px-6"
       >
+<<<<<<< HEAD
         <div className="grid md:grid-cols-6 gap-12 pb-16">
 
           {/* ── LOGO & TAGLINE ── */}
           <motion.div variants={itemVariants} className="md:col-span-2 pr-4">
+=======
+        <div className="grid md:grid-cols-12 gap-12 pb-16">
+
+          {/* ── LOGO & TAGLINE ── */}
+          <motion.div variants={itemVariants} className="md:col-span-4 pr-4">
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
             <Link to="/">
               <motion.img
                 whileHover={{ scale: 1.02 }}
@@ -68,7 +75,11 @@ export function Footer() {
           </motion.div>
 
           {/* ── INSTRUMENTS LINKS ── */}
+<<<<<<< HEAD
           <motion.div variants={itemVariants} className="md:col-span-1">
+=======
+          <motion.div variants={itemVariants} className="md:col-span-3">
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
             <h4 className="font-mono text-sm text-[#F4813A] tracking-widest mb-6 uppercase flex items-center gap-2">
               <span className="w-4 h-[1px] bg-[#F4813A]" /> Instruments
             </h4>
@@ -93,6 +104,7 @@ export function Footer() {
             </ul>
           </motion.div>
 
+<<<<<<< HEAD
           {/* ── VOCALS LINKS ── */}
           <motion.div variants={itemVariants} className="md:col-span-1">
             <h4 className="font-mono text-sm text-[#F4813A] tracking-widest mb-6 uppercase flex items-center gap-2">
@@ -121,6 +133,10 @@ export function Footer() {
 
           {/* ── QUICK LINKS ── */}
           <motion.div variants={itemVariants} className="md:col-span-1">
+=======
+          {/* ── QUICK LINKS ── */}
+          <motion.div variants={itemVariants} className="md:col-span-2">
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
             <h4 className="font-mono text-sm text-[#F4813A] tracking-widest mb-6 uppercase flex items-center gap-2">
               <span className="w-4 h-[1px] bg-[#F4813A]" /> Links
             </h4>
@@ -148,7 +164,11 @@ export function Footer() {
           </motion.div>
 
           {/* ── CONTACT INFO ── */}
+<<<<<<< HEAD
           <motion.div variants={itemVariants} className="md:col-span-1">
+=======
+          <motion.div variants={itemVariants} className="md:col-span-3">
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
             <h4 className="font-mono text-sm text-[#F4813A] tracking-widest mb-6 uppercase flex items-center gap-2">
               <span className="w-4 h-[1px] bg-[#F4813A]" /> Contact
             </h4>
@@ -166,9 +186,12 @@ export function Footer() {
   <li className="flex gap-3 items-start group">
     <Phone className="w-5 h-5 mt-0.5 text-[#F4813A] shrink-0 group-hover:rotate-12 transition-transform" />
     <div className="flex flex-col">
+<<<<<<< HEAD
       <a href="tel:+917770003038" className="hover:text-white transition-colors">
         +91 77700 03038
       </a>
+=======
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
       <a href="tel:+917770003037" className="hover:text-white transition-colors">
         +91 77700 03037
       </a>
@@ -184,7 +207,11 @@ export function Footer() {
       href="mailto:info@varjaymusic.com"
       className="hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#F4813A] after:transition-all hover:after:w-full"
     >
+<<<<<<< HEAD
       varjaymusic@gmail.com
+=======
+      info@varjaymusic.com
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
     </a>
   </li>
 </ul>

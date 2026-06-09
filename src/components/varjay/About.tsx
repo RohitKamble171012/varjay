@@ -4,8 +4,13 @@ import { ArrowRight } from "lucide-react";
 
 const pills = [
   { label: "🏆 ABGMV Certified", color: "bg-[#EBF5FB] text-[#185FA5] border-[#A8D8F0]" },
+<<<<<<< HEAD
   { label: "👥 Max 5–7 students per offline batch", color: "bg-[#EBF5FB] text-[#185FA5] border-[#A8D8F0]" },
   { label: "🏆 Trinity Certified", color: "bg-[#D4EEFA] text-[#0C447C] border-[#85B7EB]" },
+=======
+  { label: "👥 Max 5–7 per batch", color: "bg-[#EBF5FB] text-[#185FA5] border-[#A8D8F0]" },
+  { label: "🎓 10+ Years Experience", color: "bg-[#D4EEFA] text-[#0C447C] border-[#85B7EB]" },
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
   { label: "💻 Online & Offline", color: "bg-[#D4EEFA] text-[#0C447C] border-[#85B7EB]" },
 ];
 

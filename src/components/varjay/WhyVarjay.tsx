@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+<<<<<<< HEAD
 import { BookOpen, Users, CheckCircle2} from "lucide-react";
 
 function OnlineIcon({ className = "w-7 h-7 text-[#5BB8E8]" }: { className?: string }) {
@@ -10,11 +11,15 @@ function OnlineIcon({ className = "w-7 h-7 text-[#5BB8E8]" }: { className?: stri
     </svg>
   );
 }
+=======
+import { BookOpen, Users, CheckCircle2, Mic2 } from "lucide-react";
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
 
 const items = [
   {
     Icon: BookOpen,
     title: "World Class Curriculum",
+<<<<<<< HEAD
     desc: "Structured levels: Beginner → Intermediate → Advanced → Exam prep.Certified by Gandharva/Trinity.",
   },
   {
@@ -26,11 +31,28 @@ const items = [
     Icon: OnlineIcon,
     title: "Online Classes",
     desc: "live one to one sessions with our expert teachers",
+=======
+    desc: "Structured levels: Beginner → Intermediate → Advanced → Exam prep. Certified by ABGMV.",
+  },
+  {
+    Icon: Users,
+    title: "Maximum 5–7 Per Batch",
+    desc: "Not a factory. A family. Every student is known by name, not by seat number.",
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
   },
   {
     Icon: CheckCircle2,
     title: "No Admission Fee",
+<<<<<<< HEAD
     desc: "Zero registration charges. Zero hidden costs. Just monthly fee starting at : ₹1,500.",
+=======
+    desc: "Zero registration charges. Zero hidden costs. Just one monthly fee: ₹1,500.",
+  },
+  {
+    Icon: Mic2,
+    title: "Perform on Stage",
+    desc: "Every student gets to perform at recitals. Because music is meant to be heard.",
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
   },
 ];
 
@@ -56,7 +78,11 @@ export function WhyVarjay() {
           Why Choose Us
         </p>
         <h2 className="font-display text-4xl md:text-6xl text-center font-semibold mb-16 text-white">
+<<<<<<< HEAD
           Why 300+ students chose Varjay
+=======
+          Why 150+ students chose Varjay
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0 lg:divide-x divide-[#5BB8E8]/15">

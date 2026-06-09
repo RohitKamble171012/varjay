@@ -34,11 +34,17 @@ function CountUp({ to, prefix = "", suffix = "" }: { to: number; prefix?: string
 
 const stats = [
   { value: 5,   suffix: "+", prefix: "",   label: "YEARS"       },
+<<<<<<< HEAD
   { value: 300, suffix: "+", prefix: "",   label: "STUDENTS"    },
   { value: 9,   suffix: "",  prefix: "",   label: "INSTRUMENTS" },
   {value : 3,  suffix: "",prefix: "", label: "Vocals" },
   { value: 5.0, suffix: "",  prefix: "★ ", label: "GOOGLE RATING"},
   
+=======
+  { value: 150, suffix: "+", prefix: "",   label: "STUDENTS"    },
+  { value: 9,   suffix: "",  prefix: "",   label: "INSTRUMENTS" },
+  { value: 4.9, suffix: "",  prefix: "★ ", label: "RATING"      },
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
 ];
 
 export function Stats() {
@@ -57,7 +63,11 @@ export function Stats() {
         style={{ background: `radial-gradient(ellipse 70% 120% at 50% 50%, ${GOLD_MID}08, transparent 70%)` }}
       />
 
+<<<<<<< HEAD
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-3 md:grid-cols-5">
+=======
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4">
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
         {stats.map((s, i) => (
           <motion.div
             key={s.label}
@@ -66,7 +76,11 @@ export function Stats() {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ delay: i * 0.1, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="text-center px-4 py-8 relative group"
+<<<<<<< HEAD
             style={{ borderRight: i < 4 ? `1px solid ${BLUE}18` : "none" }}
+=======
+            style={{ borderRight: i < 3 ? `1px solid ${BLUE}18` : "none" }}
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
           >
             {/* Per-stat top glow line — gold */}
             <div
@@ -100,7 +114,11 @@ export function Stats() {
             {/* Label — stays in the blue palette */}
             <div
               className="font-mono text-xs tracking-widest mt-3 uppercase"
+<<<<<<< HEAD
               style={{ color: `${GOLD_MID}55` }}
+=======
+              style={{ color: `${WHITE}55` }}
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
             >
               {s.label}
             </div>

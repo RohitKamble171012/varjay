@@ -2,11 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 
 import { ContactStrip } from "@/components/varjay/ContactStrip";
+<<<<<<< HEAD
+=======
+import { GALLERY } from "@/components/varjay/data";
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
 import { breadcrumbSchema, ldJson } from "@/components/varjay/schema";
 
 const URL = "https://instrument-story-spark.lovable.app/gallery";
 
 const EXTRA = [
+<<<<<<< HEAD
   "https://i.ibb.co/9jdGGBk/IMG20250727190523.jpg",
   "https://i.ibb.co/jv56RjKB/IMG20250727190850.jpg",
   "https://i.ibb.co/9k9c4NbP/IMG20250727190203.jpg",
@@ -27,6 +32,29 @@ const ALL = [...EXTRA];
 const YOUTUBE_VIDEOS = [
   "https://www.youtube.com/embed/v3UblXP6JrM",
   "https://www.youtube.com/embed/QIdfJMdqH5U",
+=======
+  "https://varjaymusic.com/wp-content/uploads/2025/11/gp01.jpg",
+  "https://varjaymusic.com/wp-content/uploads/2025/11/gp05.jpg",
+  "https://varjaymusic.com/wp-content/uploads/2025/11/gp09.jpg",
+  "https://varjaymusic.com/wp-content/uploads/2025/11/gp14.jpg",
+  "https://varjaymusic.com/wp-content/uploads/2025/11/gp17-1024x458.jpg",
+  "https://varjaymusic.com/wp-content/uploads/2024/07/Rudra.png",
+  "https://varjaymusic.com/wp-content/uploads/2024/07/Ashay.png",
+  "https://varjaymusic.com/wp-content/uploads/2024/07/Mahesh.png",
+  "https://varjaymusic.com/wp-content/uploads/2024/07/Amit.png",
+];
+
+const ALL = [...GALLERY, ...EXTRA];
+
+// Extracted YouTube Links from the provided sheet
+const YOUTUBE_VIDEOS = [
+  "https://www.youtube.com/embed/-O8iiXMCGFo",
+  "https://www.youtube.com/embed/s9i4ojE5erQ",
+  "https://www.youtube.com/embed/v3UblXP6JrM",
+  "https://www.youtube.com/embed/QIdfJMdqH5U",
+  "https://www.youtube.com/embed/dr07SwBdzaY",
+  "https://www.youtube.com/embed/YUBh6Ot2h1k",
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
   "https://www.youtube.com/embed/-6VlidjwsXY",
   "https://www.youtube.com/embed/y3R6O_kYpbE",
   "https://www.youtube.com/embed/AjFjXt6BWss",
@@ -37,6 +65,10 @@ const YOUTUBE_VIDEOS = [
   "https://www.youtube.com/embed/OtplWm3UKFc",
   "https://www.youtube.com/embed/qpSgZVCz5YQ",
   "https://www.youtube.com/embed/CQ7rcK7pWCM",
+<<<<<<< HEAD
+=======
+  "https://www.youtube.com/embed/LDdRb41L4-M",
+>>>>>>> cd17ad2ae7ed554cbec92fe20594040b40d4bbf9
   "https://www.youtube.com/embed/Kqp4EFoDc8g"
 ];
 
